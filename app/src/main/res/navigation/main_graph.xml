@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragment1">
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.praccticetask2.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/action_fragment1_to_fragmentAnother"
+            app:destination="@id/fragmentAnother" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.praccticetask2.Fragment2"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragmentAnother"
+            app:destination="@id/fragmentAnother" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.praccticetask2.Fragment3"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_3" >
+        <action
+            android:id="@+id/action_fragment3_to_fragmentAnother"
+            app:destination="@id/fragmentAnother" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.praccticetask2.Fragment4"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_4" >
+        <action
+            android:id="@+id/action_fragment4_to_fragmentAnother"
+            app:destination="@id/fragmentAnother" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment5"
+        android:name="com.example.praccticetask2.Fragment5"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_5" >
+        <action
+            android:id="@+id/action_fragment5_to_fragmentAnother"
+            app:destination="@id/fragmentAnother" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAnother"
+        android:name="com.example.praccticetask2.FragmentAnother"
+        android:label="FragmentAnother"
+        tools:layout="@layout/fragment_another" />
+</navigation>
